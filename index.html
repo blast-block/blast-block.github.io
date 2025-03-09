@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Block Blast online for free. Match blocks, create combos and blast through exciting levels in this addictive puzzle game.">
+    <meta name="keywords" content="block blast, puzzle game, match blocks, free online game">
+    <title>Block Blast - Play Online</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #222;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #ffcc00;
+        }
+        .header-subtitle {
+            margin: 0 0 0 10px;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        .game-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 75%;
+            background-color: #333;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .game-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .game-description {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        .feature-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .feature-card {
+            flex: 1 1 300px;
+            background-color: #222;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            color: #ffcc00;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #222;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        .play-button {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #121212;
+            padding: 8px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: all 0.2s ease;
+        }
+        .play-button:hover {
+            transform: scale(1.03);
+            background-color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Block Blast</h1>
+                <span class="header-subtitle">Free Online Puzzle</span>
+            </div>
+            <a href="#game" class="play-button">PLAY NOW</a>
+        </header>
+        
+        <div id="game" class="game-container">
+            <!-- Game iframe will be loaded here -->
+            <iframe class="game-iframe" src="https://assets.unlockagame.com/blockblast/index.html" allowfullscreen></iframe>
+            <!-- Replace "about:blank" with your actual game URL -->
+        </div>
+        
+        <div class="game-description">
+            <h2>Welcome to Block Blast!</h2>
+            <p>Block Blast is an exciting puzzle game that challenges your strategic thinking and quick reflexes. Match colorful blocks, create powerful combos, and blast your way through increasingly difficult levels.</p>
+            
+            <p>In Block Blast, your goal is simple: match blocks of the same color to clear them from the board. The more blocks you clear at once, the higher your score. But be careful - new blocks are constantly falling, and if they reach the top, it's game over!</p>
+            
+            <p>With intuitive controls and addictive gameplay, Block Blast is easy to learn but difficult to master. Challenge yourself to beat your high score or compete with players from around the world on our global leaderboards.</p>
+            
+            <p>Play for free directly on our website - no downloads required!</p>
+        </div>
+        
+        <div class="feature-section">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Simple Controls</h3>
+                <p>Easy to learn, intuitive gameplay that anyone can enjoy</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>Global Leaderboards</h3>
+                <p>Compete with players worldwide and aim for the top spot</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎮</div>
+                <h3>No Downloads</h3>
+                <p>Play instantly in your browser - no installation needed</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Block Blast. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
