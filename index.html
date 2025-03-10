@@ -11,107 +11,7 @@
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/favicon.ico">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #ffffff;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 10px;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            background-color: #222;
-            margin-bottom: 15px;
-            border-radius: 8px;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 1.8rem;
-            color: #ffcc00;
-        }
-        .header-subtitle {
-            margin: 0 0 0 10px;
-            font-size: 0.9rem;
-            color: #ccc;
-        }
-        .game-container {
-            display: block;
-            width: 100%;
-            height: 600px;
-            background-color: #333;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        .game-iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        .game-description {
-            background-color: #222;
-            padding: 20px;
-            border-radius: 8px;
-            line-height: 1.5;
-            margin-bottom: 20px;
-            font-size: 0.95rem;
-        }
-        .feature-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-        .feature-card {
-            flex: 1 1 300px;
-            background-color: #222;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .feature-icon {
-            font-size: 2rem;
-            margin-bottom: 8px;
-            color: #ffcc00;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #222;
-            border-radius: 8px;
-            font-size: 0.8rem;
-            color: #999;
-        }
-        .play-button {
-            display: inline-block;
-            background-color: #ffcc00;
-            color: #121212;
-            padding: 8px 20px;
-            font-size: 1rem;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 20px;
-            transition: all 0.2s ease;
-        }
-        .play-button:hover {
-            transform: scale(1.03);
-            background-color: #ffd700;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/css.css" >
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -124,8 +24,8 @@
     <div class="container">
         <header>
             <div class="logo">
-                <h1>Block Blast </h1>
-                <span class="header-subtitle">Free Unblocked Online</span>
+                <span class="site-title"><a href="/">Block Blast</a></span>
+                <span class="header-subtitle">Free Online Games</span>
             </div>
             <a href="#game" class="play-button">PLAY NOW</a>
         </header>
@@ -135,6 +35,24 @@
             <iframe class="game-iframe" width="100%" height="100%" src="https://assets.unlockagame.com/blockblast/index.html" width="100%" height="100%" marginwidth="0" marginheight="0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; cross-origin-isolated" allowfullscreen="" scrolling="auto" title="Block Blast"></iframe>
             <!-- Replace "about:blank" with your actual game URL -->
         </div>
+
+        <h1>Block Blast </h1>
+
+        <section class="games-showcase">
+            <h2 class="section-title">TOP RATED</h2>
+            <div class="games-grid">
+                <a href="/game/block-blast-3d.html" class="game-card">
+                    <div class="game-card-badge">TOP RATED 🏆</div>
+                    <img src="/images/games/block-blast-3d.avif" alt="Block Blast 3D" class="game-card-img">
+                    <div class="game-card-info">
+                        <h3>Block Blast 3D</h3>
+                        <div class="game-rating">★ 8.5</div>
+                    </div>
+                </a>
+            </div>
+
+            
+        </section>
         
         <div class="game-description">
             <h2>Welcome to Block Blast!</h2>
