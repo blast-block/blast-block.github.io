@@ -860,7 +860,7 @@
                         children: [
                           (0, s.jsx)("div", {
                             className: "w-56px h-56px mb-16px",
-                            children: (0, s.jsx)(U(), {
+                            children: (0, s.jsx)("img", {
                               src: "/images/screen-shot.png",
                               alt: "Upload",
                               width: 56,
@@ -888,7 +888,7 @@
                               "bg-gray-900 text-white px-16px py-8px rounded-8px text-14px flex items-center gap-2 cursor-pointer",
                             onClick: () => (0, c.H)("select_screenshot"),
                             children: [
-                              (0, s.jsx)(U(), {
+                              (0, s.jsx)("img", {
                                 src: "/images/img.png",
                                 alt: "select image",
                                 height: 20,
@@ -940,7 +940,7 @@
                   }),
                   (0, s.jsx)("div", {
                     className: "flex justify-center items-center mb-12px",
-                    children: (0, s.jsx)(U(), {
+                    children: (0, s.jsx)("img", {
                       src: "/images/example.png",
                       alt: "Example Image",
                       width: 106,
