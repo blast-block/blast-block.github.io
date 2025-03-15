@@ -11,7 +11,7 @@
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/favicon.ico">
-    <link rel="stylesheet" href="/css/css.css" >
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -20,107 +20,110 @@
     })(window,document,'script','dataLayer','GTM-W7TV5XXV');</script>
     <!-- End Google Tag Manager -->
 </head>
-<body>
-    <div class="container">
-        <header>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <header class="flex justify-between items-center bg-blue-600 text-white p-4 rounded-lg mb-6">
             <div class="logo">
-                <span class="site-title"><a href="/">Block Blast</a></span>
-                <span class="header-subtitle">Free Online Games</span>
+                <span class="text-2xl font-bold"><a href="/" class="hover:text-blue-200">Block Blast</a></span>
+                <span class="text-sm ml-2 block md:inline-block">Free Online Games</span>
             </div>
-            <a href="#game" class="play-button">PLAY NOW</a>
+            <a href="#game" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-full transition duration-300">PLAY NOW</a>
         </header>
         
-        <div id="game" class="game-container">
-            <!-- Game iframe will be loaded here -->
-            <iframe src="https://i.simmer.io/@Nathan103/block-breaker?key=y8&value=default" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+        <div id="game" class="game-container w-full h-96 md:h-[600px] bg-black mb-6 rounded-lg overflow-hidden">
+            <iframe src="https://i.simmer.io/@Nathan103/block-breaker?key=y8&value=default" class="w-full h-full" frameborder="0" allow="gamepad *;"></iframe>
         </div>
         
-        <h1 class="game-title">Block Breaker</h1>
+        <h1 class="text-3xl font-bold text-center mb-6">Block Breaker</h1>
         
-        <div class="game-info">
-            <div class="game-details">
-                <div class="info-row">
-                    <div class="info-label">Developer:</div>
-                    <div class="info-value">Retro Games Studio</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-label">Rating:</div>
-                    <div class="info-value"><span class="rating">9.2</span> (42,683 votes)</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-label">Released:</div>
-                    <div class="info-value">June 2024</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-label">Last Updated:</div>
-                    <div class="info-value">October 2024</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-label">Technology:</div>
-                    <div class="info-value">HTML5</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-label">Platform:</div>
-                    <div class="info-value">Browser (desktop, mobile, tablet), iOS, Android</div>
-                </div>
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-1">
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <div class="font-semibold">Developer:</div>
+                            <div>Retro Games Studio</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="font-semibold">Rating:</div>
+                            <div><span class="text-yellow-500 font-bold">9.2</span> (42,683 votes)</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="font-semibold">Released:</div>
+                            <div>June 2024</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="font-semibold">Last Updated:</div>
+                            <div>October 2024</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="font-semibold">Technology:</div>
+                            <div>HTML5</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="font-semibold">Platform:</div>
+                            <div>Browser (desktop, mobile, tablet), iOS, Android</div>
+                        </div>
                 
-                <div class="tags-container">
-                    <div class="tag">Arcade <span>343</span></div>
-                    <div class="tag">Classic <span>264</span></div>
-                    <div class="tag">Ball <span>135</span></div>
-                    <div class="tag">Brick <span>93</span></div>
-                    <div class="tag">Block <span>86</span></div>
-                    <div class="tag">Retro <span>147</span></div>
-                    <div class="tag">Mobile <span>545</span></div>
-                    <div class="tag">Mouse <span>1,391</span></div>
-                    <div class="tag">Casual <span>692</span></div>
+                        <div class="mt-6 flex flex-wrap gap-2">
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Arcade <span class="text-xs bg-blue-200 px-1 rounded-full">343</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Classic <span class="text-xs bg-blue-200 px-1 rounded-full">264</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Ball <span class="text-xs bg-blue-200 px-1 rounded-full">135</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Brick <span class="text-xs bg-blue-200 px-1 rounded-full">93</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Block <span class="text-xs bg-blue-200 px-1 rounded-full"></span>86</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Retro <span class="text-xs bg-blue-200 px-1 rounded-full">147</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Mobile <span class="text-xs bg-blue-200 px-1 rounded-full">545</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Mouse <span class="text-xs bg-blue-200 px-1 rounded-full">1,391</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Casual <span class="text-xs bg-blue-200 px-1 rounded-full">692</span></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
             
-            <div class="game-description">
-                <h2>About Block Breaker</h2>
-                <p>Block Breaker is a modern take on the classic arcade brick-breaking games that captured hearts in the 80s and 90s. In this addictive game, you control a paddle at the bottom of the screen to bounce a ball upward, breaking colorful blocks arranged in various patterns. Your goal is simple: clear all blocks to advance to the next level.</p>
-                
-                <p>With its vibrant HD graphics, smooth physics, and engaging sound effects, Block Breaker brings the beloved classic into the modern era. Each level introduces new challenges, unique block arrangements, and exciting power-ups that can change the gameplay in an instant.</p>
-                
-                <p>As you progress through the 100+ levels, you'll encounter special blocks that require multiple hits, explosive blocks that clear surrounding areas, and mystery blocks with unpredictable effects. Collect power-ups to gain advantages like multi-ball, expanded paddle, laser shots, and slow-motion effects.</p>
-                
-                <p>Block Breaker features several game modes, including Classic Mode, Time Attack, Endless Challenge, and a level editor where you can create and share your own block arrangements with the community.</p>
-                
-                <h2>How to Play Block Breaker</h2>
-                <p>Move your paddle horizontally at the bottom of the screen to bounce the ball upward toward the blocks. Each time the ball hits a block, it breaks or damages the block and bounces back. Your main objective is to break all blocks without letting the ball fall below your paddle.</p>
-                
-                <p>Use strategic angles to reach difficult blocks and aim for power-ups that fall from certain broken blocks. These power-ups can dramatically change your gameplay strategy by giving you advantages like multiple balls, a wider paddle, or special abilities like shooting directly at blocks.</p>
-                
-                <p>As you advance through levels, you'll need to adapt to increasingly complex block arrangements and special block types, including:</p>
-                <ul>
-                    <li>Standard blocks: Break with one hit</li>
-                    <li>Reinforced blocks: Require multiple hits to break</li>
-                    <li>Explosive blocks: Destroy surrounding blocks when broken</li>
-                    <li>Metallic blocks: Unbreakable, used as obstacles</li>
-                    <li>Mystery blocks: Contain random effects when broken</li>
-                </ul>
-                
-                <h2>Features</h2>
-                <ul>
-                    <li>100+ challenging levels with increasing difficulty</li>
-                    <li>Multiple game modes (Classic, Time Attack, Endless)</li>
-                    <li>15 unique power-ups to enhance gameplay</li>
-                    <li>Modern HD graphics with smooth physics</li>
-                    <li>Global leaderboards to compete with players worldwide</li>
-                    <li>Custom level editor to create and share your designs</li>
-                    <li>Achievements and rewards system</li>
-                </ul>
+                <div class="md:col-span-2">
+                    <h2 class="text-2xl font-semibold mb-4">About Block Breaker</h2>
+                    <p class="mb-4">Block Breaker is a modern take on the classic arcade brick-breaking games tcaptured hearts in the 80s and 90s. In this addictive game, you control a paddle at the botof the screen to bounce a ball upward, breaking colorful blocks arranged in various patterYour goal is simple: clear all blocks to advance to the next level.</p>
+                    
+                    <p class="mb-4">With its vibrant HD graphics, smooth physics, and engaging sound effects, BlBreaker brings the beloved classic into the modern era. Each level introduces new challengunique block arrangements, and exciting power-ups that can change the gameplay in an instant.</p>
+                    
+                    <p class="mb-4">As you progress through the 100+ levels, you'll encounter special blocks trequire multiple hits, explosive blocks that clear surrounding areas, and mystery blocks wunpredictable effects. Collect power-ups to gain advantages like multi-ball, expanded paddlaser shots, and slow-motion effects.</p>
+                    
+                    <p class="mb-4">Block Breaker features several game modes, including Classic Mode, Time AttaEndless Challenge, and a level editor where you can create and share your own block arrangemewith the community.</p>
+                    
+                    <h2 class="text-2xl font-semibold mb-4">How to Play Block Breaker</h2>
+                    <p class="mb-4">Move your paddle horizontally at the bottom of the screen to bounce the bupward toward the blocks. Each time the ball hits a block, it breaks or damages the block bounces back. Your main objective is to break all blocks without letting the ball fall beyour paddle.</p>
+                    
+                    <p class="mb-4">Use strategic angles to reach difficult blocks and aim for power-ups that ffrom certain broken blocks. These power-ups can dramatically change your gameplay strategygiving you advantages like multiple balls, a wider paddle, or special abilities like shootdirectly at blocks.</p>
+                    
+                    <p class="mb-4">As you advance through levels, you'll need to adapt to increasingly compblock arrangements and special block types, including:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Standard blocks: Break with one hit</li>
+                        <li>Reinforced blocks: Require multiple hits to break</li>
+                        <li>Explosive blocks: Destroy surrounding blocks when broken</li>
+                        <li>Metallic blocks: Unbreakable, used as obstacles</li>
+                        <li>Mystery blocks: Contain random effects when broken</li>
+                    </ul>
+                    
+                    <h2 class="text-2xl font-semibold mb-4">Features</h2>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>100+ challenging levels with increasing difficulty</li>
+                        <li>Multiple game modes (Classic, Time Attack, Endless)</li>
+                        <li>15 unique power-ups to enhance gameplay</li>
+                        <li>Modern HD graphics with smooth physics</li>
+                        <li>Global leaderboards to compete with players worldwide</li>
+                        <li>Custom level editor to create and share your designs</li>
+                        <li>Achievements and rewards system</li>
+                    </ul>
+                </div>
             </div>
         </div>
         
-        <div class="controls-section">
-            <h3>Controls</h3>
-            <p>Desktop: Use mouse or left/right arrow keys to move the paddle. Click or press spacebar to launch the ball.</p>
-            <p>Mobile: Swipe left or right to move the paddle. Tap to launch the ball.</p>
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-xl font-semibold mb-4">Controls</h3>
+            <p class="mb-2">Desktop: Use mouse or left/right arrow keys to move the paddle. Click or press spaceto launch the ball.</p>
+            <p class="mb-2">Mobile: Swipe left or right to move the paddle. Tap to launch the ball.</p>
         </div>
         
-        <footer>
+        <footer class="text-center text-gray-600 mt-8 pt-4 border-t border-gray-300">
             <p>&copy; 2025 Block Blast. All rights reserved.</p>
         </footer>
     </div>

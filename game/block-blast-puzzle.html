@@ -11,7 +11,7 @@
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/favicon.ico">
-    <link rel="stylesheet" href="/css/css.css" >
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -20,93 +20,98 @@
     })(window,document,'script','dataLayer','GTM-W7TV5XXV');</script>
     <!-- End Google Tag Manager -->
 </head>
-<body>
-    <div class="container">
-        <header>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <header class="flex justify-between items-center bg-blue-600 text-white p-4 rounded-lg mb-6">
             <div class="logo">
-                <span class="site-title"><a href="/">Block Blast</a></span>
-                <span class="header-subtitle">Free Online Games</span>
+                <span class="text-2xl font-bold"><a href="/" class="hover:text-blue-200">Block Blast</a></span>
+                <span class="text-sm ml-2 block md:inline-block">Free Online Games</span>
             </div>
-            <a href="#game" class="play-button">PLAY NOW</a>
+            <a href="#game" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-full transition duration-300">PLAY NOW</a>
         </header>
         
-        <div id="game" class="game-container">
-            <!-- Game iframe will be loaded here -->
-            <iframe src="https://www.crazygames.com/embed/blockbuster-puzzle" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>        </div>
         
-        <h1 class="game-title">Block Blast Puzzle</h1>
+        <div id="game" class="game-container w-full h-96 md:h-[600px] bg-black mb-6 rounded-lg overflow-hidden">
+            <iframe src="https://www.crazygames.com/embed/blockbuster-puzzle"  class="w-full h-full" frameborder="0" allow="gamepad *;"></iframe>
+        </div>
         
-        <div class="game-info">
-            <div class="game-details">
-                <div class="info-row">
-                    <div class="info-label">Developer:</div>
-                    <div class="info-value">Clever Apps</div>
+        <h1 class="text-3xl font-bold text-center mb-6">Block Blast Puzzle</h1>
+        
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="md:col-span-1">
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <div class="font-semibold">Developer:</div>
+                            <div>Clever Apps</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="font-semibold">Rating:</div>
+                            <div><span class="text-yellow-500 font-bold">8.5</span> (34,912 votes)</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="font-semibold">Released:</div>
+                            <div>May 2024</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="font-semibold">Last Updated:</div>
+                            <div>November 2024</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="font-semibold">Technology:</div>
+                            <div>HTML5</div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="font-semibold">Platform:</div>
+                            <div>Browser (desktop, mobile, tablet), App Store(Android)</div>
+                        </div>
+                        
+                        <div class="mt-6 flex flex-wrap gap-2">
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Puzzle <span class="text-xs bg-blue-200 px-1 rounded-full">584</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Mobile <span class="text-xs bg-blue-200 px-1 rounded-full">545</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Tetris <span class="text-xs bg-blue-200 px-1 rounded-full">37</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Color <span class="text-xs bg-blue-200 px-1 rounded-full">172</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Logic <span class="text-xs bg-blue-200 px-1 rounded-full">455</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Mouse <span class="text-xs bg-blue-200 px-1 rounded-full">1,391</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Brain <span class="text-xs bg-blue-200 px-1 rounded-full">146</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Arcade <span class="text-xs bg-blue-200 px-1 rounded-full">343</span></div>
+                            <div class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Block <span class="text-xs bg-blue-200 px-1 rounded-full">86</span></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="info-row">
-                    <div class="info-label">Rating:</div>
-                    <div class="info-value"><span class="rating">8.5</span> (34,912 votes)</div>
+                    
+                <div class="md:col-span-2">
+                    <h2 lass="text-2xl font-semibold mb-4">About Block Blast Puzzle</h2>
+                    <p class="mb-4">Block Blast Puzzle is a Tetris-like game where you match colorful blocks so they disappear from the game screen. Unlock new realms and challenges as you progress, enjoying vibrant graphics and immersive gameplay. Prove your skills as a true puzzle master with every level you advance.</p>
+                        
+                    <h2 lass="text-2xl font-semibold mb-4">How to Play Block Blast Puzzle</h2>
+                    <p class="mb-4">There are a few tutorials throughout the game to help guide you with controls and strategy, but this may not be necessary as the game is fairly straightforward. You get a series of blocks in various geometric shapes placed on the side of the game screen. Click on the one you want to move and carry it to the game board.</p>
+                        
+                    <p class="mb-4">Each geometric shape may or may not fit together on the main game board - this is where your strategic eye comes in. Place each geometric shape on the board in a position to get one full line of gapless blocks. When you do this, that entire line will disappear.</p>
+                        
+                    <p class="mb-4">Various rounds will allow you to collect more points, as some blocks are bedazzled with jewels worth more. You may have prompted a few moves, like clearing the board or undoing your last move. Take the suggestion, as it usually gets you out of a jam.</p>
+                        
+                    <h2 lass="text-2xl font-semibold mb-4">Release Date</h2>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>February 2024 (Android)</li>
+                        <li>May 2024 (HTML5)</li>
+                    </ul>
+                        
+                    <h2>Platforms</h2>
+                    <ul>
+                        <li>Web browser (desktop and mobile)</li>
+                        <li>Android</li>
+                    </ul>
                 </div>
-                <div class="info-row">
-                    <div class="info-label">Released:</div>
-                    <div class="info-value">May 2024</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-label">Last Updated:</div>
-                    <div class="info-value">November 2024</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-label">Technology:</div>
-                    <div class="info-value">HTML5</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-label">Platform:</div>
-                    <div class="info-value">Browser (desktop, mobile, tablet), App Store(Android)</div>
-                </div>
-                
-                <div class="tags-container">
-                    <div class="tag">Puzzle <span>584</span></div>
-                    <div class="tag">Mobile <span>545</span></div>
-                    <div class="tag">Tetris <span>37</span></div>
-                    <div class="tag">Color <span>172</span></div>
-                    <div class="tag">Logic <span>455</span></div>
-                    <div class="tag">Mouse <span>1,391</span></div>
-                    <div class="tag">Brain <span>146</span></div>
-                    <div class="tag">Arcade <span>343</span></div>
-                    <div class="tag">Block <span>86</span></div>
-                </div>
-            </div>
-            
-            <div class="game-description">
-                <h2>About Block Blast Puzzle</h2>
-                <p>Block Blast Puzzle is a Tetris-like game where you match colorful blocks so they disappear from the game screen. Unlock new realms and challenges as you progress, enjoying vibrant graphics and immersive gameplay. Prove your skills as a true puzzle master with every level you advance.</p>
-                
-                <h2>How to Play Block Blast Puzzle</h2>
-                <p>There are a few tutorials throughout the game to help guide you with controls and strategy, but this may not be necessary as the game is fairly straightforward. You get a series of blocks in various geometric shapes placed on the side of the game screen. Click on the one you want to move and carry it to the game board.</p>
-                
-                <p>Each geometric shape may or may not fit together on the main game board - this is where your strategic eye comes in. Place each geometric shape on the board in a position to get one full line of gapless blocks. When you do this, that entire line will disappear.</p>
-                
-                <p>Various rounds will allow you to collect more points, as some blocks are bedazzled with jewels worth more. You may have prompted a few moves, like clearing the board or undoing your last move. Take the suggestion, as it usually gets you out of a jam.</p>
-                
-                <h2>Release Date</h2>
-                <ul>
-                    <li>February 2024 (Android)</li>
-                    <li>May 2024 (HTML5)</li>
-                </ul>
-                
-                <h2>Platforms</h2>
-                <ul>
-                    <li>Web browser (desktop and mobile)</li>
-                    <li>Android</li>
-                </ul>
             </div>
         </div>
         
-        <div class="controls-section">
-            <h3>Controls</h3>
-            <p>Use the left mouse button to play. Click on blocks to select them and place them on the game board.</p>
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-xl font-semibold mb-4">Controls</h3>
+            <p class="mb-2">Use the left mouse button to play. Click on blocks to select them and place them on the game board.</p>
         </div>
         
-        <footer>
+        <footer class="text-center text-gray-600 mt-8 pt-4 border-t border-gray-300">
             <p>&copy; 2025 Block Blast. All rights reserved.</p>
         </footer>
     </div>

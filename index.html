@@ -11,7 +11,7 @@
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/favicon.ico">
-    <link rel="stylesheet" href="/css/css.css" >
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -20,98 +20,103 @@
     })(window,document,'script','dataLayer','GTM-W7TV5XXV');</script>
     <!-- End Google Tag Manager -->
 </head>
-<body>
-    <div class="container">
-        <header>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <header class="flex justify-between items-center bg-blue-600 text-white p-4 rounded-lg mb-6">
             <div class="logo">
-                <span class="site-title"><a href="/">Block Blast</a></span>
-                <span class="header-subtitle">Free Online Games</span>
+                <span class="text-2xl font-bold"><a href="/" class="hover:text-blue-200">Block Blast</a></span>
+                <span class="text-sm ml-2 block md:inline-block">Free Online Games</span>
             </div>
-            <a href="#game" class="play-button">PLAY NOW</a>
+            <a href="#game" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-full transition duration-300">PLAY NOW</a>
         </header>
         
-        <div id="game" class="game-container">
+        <div id="game" class="w-full h-96 md:h-[600px] bg-black mb-6 rounded-lg overflow-hidden">
             <!-- Game iframe will be loaded here -->
-            <iframe class="game-iframe" width="100%" height="100%" src="https://assets.unlockagame.com/blockblast/index.html" width="100%" height="100%" marginwidth="0" marginheight="0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; cross-origin-isolated" allowfullscreen="" scrolling="auto" title="Block Blast"></iframe>
-            <!-- Replace "about:blank" with your actual game URL -->
+            <iframe class="w-full h-full" src="https://assets.unlockagame.com/blockblast/index.html" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; cross-origin-isolated" allowfullscreen="" scrolling="auto" title="Block Blast"></iframe>
         </div>
 
-        <h1>Block Blast </h1>
-
-        <section class="games-showcase">
-            <h2 class="section-title">TOP RATED</h2>
-            <div class="games-grid">
-                <a href="/game/block-blast-3d.html" class="game-card">
-                    <div class="game-card-badge">TOP RATED 🏆</div>
-                    <img src="/images/games/block-blast-3d.avif" alt="Block Blast 3D" class="game-card-img">
-                    <div class="game-card-info">
-                        <h3>Block Blast 3D</h3>
-                        <div class="game-rating">★ 8.5</div>
+        <h1 class="text-3xl font-bold text-center mb-6">Block Blast</h1>
+        <div class="w-full bg-yellow-100 border-2 border-yellow-400 rounded-lg p-4 mb-6 flex items-center justify-between">
+            <div>
+                <h3 class="text-xl font-bold text-gray-800">Stuck on a difficult level?</h3>
+                <p class="text-gray-700">Get instant help with our Block Blast Solver tool!</p>
+            </div>
+            <a href="/block-blast-solver.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 flex items-center">
+                <span>GET SOLVER</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-4 text-center bg-blue-600 text-white py-2 rounded-lg">TOP RATED</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="/game/block-blast-3d.html" class="block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="bg-yellow-400 text-black font-bold py-1 px-2 absolute">TOP RATED 🏆</div>
+                    <img src="/images/games/block-blast-3d.avif" alt="Block Blast 3D" class="w-full h-44 object-cover">
+                    <div class="p-3 flex justify-between items-center">
+                        <h3 class="font-semibold">Block Blast 3D</h3>
+                        <div class="text-yellow-500 font-bold">★ 8.5</div>
                     </div>
                 </a>
-                <a href="/game/block-blast-puzzle.html" class="game-card">
-                    <div class="game-card-badge">TOP RATED 🏆</div>
-                    <img src="/images/games/block-blast-puzzle.jpeg" alt="Block Blast Puzzle" class="game-card-img">
-                    <div class="game-card-info">
-                        <h3>Block Blast Puzzle</h3>
-                        <div class="game-rating">★ 8.5</div>
+                <a href="/game/block-blast-puzzle.html" class="block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="bg-yellow-400 text-black font-bold py-1 px-2 absolute">TOP RATED 🏆</div>
+                    <img src="/images/games/block-blast-puzzle.jpeg" alt="Block Blast Puzzle" class="w-full h-44 object-cover">
+                    <div class="p-3 flex justify-between items-center">
+                        <h3 class="font-semibold">Block Blast Puzzle</h3>
+                        <div class="text-yellow-500 font-bold">★ 8.5</div>
                     </div>
                 </a>
-                <a href="/game/block-breaker.html" class="game-card">
-                    <img src="/images/games/block-breaker.gif" alt="Block Breaker" class="game-card-img">
-                    <div class="game-card-info">
-                        <h3>Block Breaker</h3>
-                        <div class="game-rating">★ 9.2</div>
+                <a href="/game/block-breaker.html" class="block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="/images/games/block-breaker.gif" alt="Block Breaker" class="w-full h-44 object-cover">
+                    <div class="p-3 flex justify-between items-center">
+                        <h3 class="font-semibold">Block Breaker</h3>
+                        <div class="text-yellow-500 font-bold">★ 9.2</div>
                     </div>
                 </a>
-                
-                <a href="/game/trixie-subway-surfers.html" class="game-card">
-                    <img src="/images/games/trixie-subway-surfers.avif" alt="Block Breaker" class="game-card-img">
-                    <div class="game-card-info">
-                        <h3>Trixie Subway Surfers</h3>
-                        <div class="game-rating">★ 9.6</div>
+                <a href="/game/trixie-subway-surfers.html" class="block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="/images/games/trixie-subway-surfers.avif" alt="Trixie Subway Surfers" class="w-full h-44 object-cover">
+                    <div class="p-3 flex justify-between items-center">
+                        <h3 class="font-semibold">Trixie Subway Surfers</h3>
+                        <div class="text-yellow-500 font-bold">★ 9.6</div>
                     </div>
                 </a>
             </div>
-            <div class="games-grid">
-                
-            </div>
-
-            
         </section>
         
-        <div class="game-description">
-            <h2>Welcome to Block Blast!</h2>
-            <p>Block Blast Unblocked is an exciting puzzle game that challenges your strategic thinking and quick reflexes. Match colorful blocks, create powerful combos, and blast your way through increasingly difficult levels.</p>
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Welcome to Block Blast!</h2>
+            <p class="mb-4">Block Blast Unblocked is an exciting puzzle game that challenges your strategic thinking and quick reflexes. Match colorful blocks, create powerful combos, and blast your way through increasingly difficult levels.</p>
             
-            <p>In Block Blast Unblocked, your goal is simple: match blocks of the same color to clear them from the board. The more blocks you clear at once, the higher your score. But be careful - new blocks are constantly falling, and if they reach the top, it's game over!</p>
+            <p class="mb-4">In Block Blast Unblocked, your goal is simple: match blocks of the same color to clear them from the board. The more blocks you clear at once, the higher your score. But be careful - new blocks are constantly falling, and if they reach the top, it's game over!</p>
             
-            <p>With intuitive controls and addictive gameplay, Block Blast Unblocked is easy to learn but difficult to master. Challenge yourself to beat your high score or compete with players from around the world on our global leaderboards.</p>
+            <p class="mb-4">With intuitive controls and addictive gameplay, Block Blast Unblocked is easy to learn but difficult to master. Challenge yourself to beat your high score or compete with players from around the world on our global leaderboards.</p>
             
             <p>Play for free directly on our website - no downloads required!</p>
         </div>
         
-        <div class="feature-section">
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>Simple Controls</h3>
-                <p>Easy to learn, intuitive gameplay that anyone can enjoy</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 text-center">
+                <div class="text-4xl mb-3">⚡</div>
+                <h3 class="text-xl font-semibold mb-2">Simple Controls</h3>
+                <p class="text-gray-700">Easy to learn, intuitive gameplay that anyone can enjoy</p>
             </div>
             
-            <div class="feature-card">
-                <div class="feature-icon">🏆</div>
-                <h3>Global Leaderboards</h3>
-                <p>Compete with players worldwide and aim for the top spot</p>
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 text-center">
+                <div class="text-4xl mb-3">🏆</div>
+                <h3 class="text-xl font-semibold mb-2">Global Leaderboards</h3>
+                <p class="text-gray-700">Compete with players worldwide and aim for the top spot</p>
             </div>
             
-            <div class="feature-card">
-                <div class="feature-icon">🎮</div>
-                <h3>No Downloads</h3>
-                <p>Play instantly in your browser - no installation needed</p>
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 text-center">
+                <div class="text-4xl mb-3">🎮</div>
+                <h3 class="text-xl font-semibold mb-2">No Downloads</h3>
+                <p class="text-gray-700">Play instantly in your browser - no installation needed</p>
+                <p class="mb-4">Need help advancing through difficult levels? Check out our <a href="/block-blast-solver.html" class="text-blue-600 hover:text-blue-800 font-medium">Block Blast Solver</a> to get tips and strategies to improve your gameplay.</p>
             </div>
         </div>
         
-        <footer>
+        <footer class="text-center text-gray-600 mt-8 pt-4 border-t border-gray-300">
             <p>&copy; 2025 Block Blast. All rights reserved.</p>
         </footer>
     </div>
