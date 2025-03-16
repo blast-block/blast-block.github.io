@@ -18,15 +18,134 @@
         r = l(91106),
         o = l.n(r);
       let i = () =>
-          (0, s.jsx)("footer", {
-            className: "text-center text-gray-600 mt-8 pt-4 border-t border-gray-300",
-            children: (0, s.jsxs)("p", {
-              className: "",
-              children: [
-                "&copy; 2025 Block Blast. All rights reserved."
-              ],
-            }),
-          }),
+        (0, s.jsx)("footer", {
+          className: "bg-blue-600 text-white py-8 mt-8 rounded-lg",
+          children: (0, s.jsx)("div", {
+            className: "container mx-auto px-4",
+            children: [
+              (0, s.jsx)("div", {
+                className: "grid grid-cols-1 md:grid-cols-3 gap-8 mb-6",
+                children: [
+                  (0, s.jsx)("div", {
+                    children: [
+                      (0, s.jsx)("h4", {
+                        className: "text-xl font-bold mb-4",
+                        children: "Block Blast"
+                      }),
+                      (0, s.jsx)("p", {
+                        className: "text-blue-100 mb-4",
+                        children: "The ultimate puzzle game experience with matching blocks, exciting combos, and challenging levels."
+                      }),
+                      (0, s.jsx)("a", {
+                        href: "#game",
+                        className: "bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-full transition duration-300 inline-block",
+                        children: "PLAY NOW"
+                      })
+                    ]
+                  }),
+                  (0, s.jsx)("div", {
+                    children: [
+                      (0, s.jsx)("h4", {
+                        className: "text-xl font-bold mb-4",
+                        children: "Quick Links"
+                      }),
+                      (0, s.jsx)("ul", {
+                        className: "space-y-2",
+                        children: [
+                          (0, s.jsx)("li", {
+                            children: (0, s.jsx)("a", {
+                              href: "/",
+                              className: "text-blue-100 hover:text-white transition duration-300",
+                              children: "Home"
+                            })
+                          }),
+                          (0, s.jsx)("li", {
+                            children: (0, s.jsx)("a", {
+                              href: "/block-blast-solver.html",
+                              className: "text-blue-100 hover:text-white transition duration-300",
+                              children: "Block Blast Solver"
+                            })
+                          })
+                        ]
+                      })
+                    ]
+                  }),
+                  (0, s.jsx)("div", {
+                    children: [
+                      (0, s.jsx)("h4", {
+                        className: "text-xl font-bold mb-4",
+                        children: "Popular Games"
+                      }),
+                      (0, s.jsx)("ul", {
+                        className: "space-y-2",
+                        children: [
+                          (0, s.jsx)("li", {
+                            children: (0, s.jsx)("a", {
+                              href: "/game/block-blast-3d.html",
+                              className: "text-blue-100 hover:text-white transition duration-300",
+                              children: "Block Blast 3D"
+                            })
+                          }),
+                          (0, s.jsx)("li", {
+                            children: (0, s.jsx)("a", {
+                              href: "/game/block-blast-puzzle.html",
+                              className: "text-blue-100 hover:text-white transition duration-300",
+                              children: "Block Blast Puzzle"
+                            })
+                          }),
+                          (0, s.jsx)("li", {
+                            children: (0, s.jsx)("a", {
+                              href: "/game/block-breaker.html",
+                              className: "text-blue-100 hover:text-white transition duration-300",
+                              children: "Block Breaker"
+                            })
+                          }),
+                          (0, s.jsx)("li", {
+                            children: (0, s.jsx)("a", {
+                              href: "/game/trixie-subway-surfers.html",
+                              className: "text-blue-100 hover:text-white transition duration-300",
+                              children: "Trixie Subway Surfers"
+                            })
+                          })
+                        ]
+                      })
+                    ]
+                  })
+                ]
+              }),
+              (0, s.jsx)("div", {
+                className: "border-t border-blue-400 pt-6 flex flex-col md:flex-row justify-between items-center",
+                children: [
+                  (0, s.jsx)("div", {
+                    className: "mb-4 md:mb-0",
+                    children: (0, s.jsx)("p", {
+                      children: "© 2025 Block Blast. All rights reserved."
+                    })
+                  }),
+                  (0, s.jsx)("div", {
+                    className: "flex flex-wrap justify-center gap-4",
+                    children: [
+                      (0, s.jsx)("a", {
+                        href: "/privacy-policy.html",
+                        className: "text-blue-100 hover:text-white transition duration-300",
+                        children: "Privacy Policy"
+                      }),
+                      (0, s.jsx)("span", {
+                        className: "hidden md:inline text-blue-400",
+                        children: "|"
+                      }),
+                      (0, s.jsx)("a", {
+                        href: "/terms-of-use.html",
+                        className: "text-blue-100 hover:text-white transition duration-300",
+                        children: "Terms of Use"
+                      })
+                    ]
+                  })
+                ]
+              })
+            ]
+          })
+        }),
         x = () =>
           (0, s.jsx)("div", {
             className: "bg-[#1C1C1E] text-white py-5 md:pt-6 md:pb-8",
