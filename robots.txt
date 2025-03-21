@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://blact-block.github.io/sitemap.xml
+Sitemap: https://blast-block.github.io/sitemap.xml
