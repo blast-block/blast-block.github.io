@@ -209,7 +209,7 @@
                               className:"hover:text-blue-200",
                               href:'/',
                               children:[
-                                "Block Blast"
+                                "Block Blast Unblocked"
                               ]
                             }),
                           ]
@@ -217,7 +217,7 @@
                         (0, s.jsxs)("span", {
                           className:"text-sm ml-2 block md:inline-block",
                           children:[
-                            "Free Online Games"
+                            "Free Online Puzzle Games"
                           ]
                         })
                       ]
