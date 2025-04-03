@@ -149,7 +149,10 @@ async function main() {
       // console.log(filteredUrls);
 
       const filteredUrls = [
-        'https://blast-block.github.io/game/trixie-subway-surfers.html',
+        'https://blast-block.github.io/blog/subway-surfers-characters-guide.html',
+'https://blast-block.github.io/blog/block-blast-beginners-guide.html',
+'https://blast-block.github.io/blog/block-blast-tips-and-tricks.html'
+
       ]
   
       if (filteredUrls.length > 0) {
